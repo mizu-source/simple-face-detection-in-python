@@ -1,13 +1,36 @@
-# simple-face-detection-in-python
+Description :
 
-identifie les visages avant de les encadrer avec des rectangles. Il s'agit d'une application basique mais fonctionnelle de vision par ordinateur pour la détection faciale en temps réel.
+Ce projet implémente un système de détection faciale en temps réel utilisant la webcam. Il repose sur la cascade de Haar d'OpenCV pour identifier les visages et les encadrer avec des rectangles colorés. Le programme affiche également un compteur du nombre de visages détectés.
 
-Ce programme utilise la webcam pour détecter des visages en direct. Il affiche un cadre coloré autour de chaque visage détecté. Pour quitter, il suffit d'appuyer sur la touche "q".
+Fonctionnalités :
 
--Capture vidéo via la webcam
+- Capture vidéo en direct depuis la webcam
 
--Détection automatique des visages
+- Détection faciale via le classifieur Haar Cascade
 
--Encadrement des visages en bleu
+- Encadrement des visages en vert lime (limegreen)
 
--Fermeture avec la touche "q"
+- Affichage du compteur en bleu ciel (deepskyblue)
+
+- Arrêt propre avec la touche q
+
+Technologies Utilisées :
+
+- Python 3
+
+- OpenCV (cv2) pour le traitement d'image
+
+- Matplotlib pour la conversion des couleurs
+
+
+Comment ça marche ?
+
+Le programme initialise la webcam et configure la résolution.
+
+Chaque image est convertie en niveaux de gris pour la détection.
+
+Les visages détectés sont entourés de rectangles et numérotés.
+
+Un compteur en temps réel indique le nombre de visages.
+
+L'application s'arrête proprement lors de l'appui sur q.
