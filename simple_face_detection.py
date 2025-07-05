@@ -19,7 +19,7 @@ try:
             scaleFactor=1.1,
             minNeighbors=5,
             minSize=(30, 30)  # Parenthèse fermante ajoutée ici
-        
+        )
         # Dessine un rectangle autour des visages
         for (x, y, w, h) in faces:
             cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
